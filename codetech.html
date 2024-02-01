@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developers portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(22, 22, 50);
+
+
+        }
+
+        /* nav{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+        nav::before{
+    content: "";
+    background-color:rgb(171, 102, 236) ;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+} */
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.3rem;
+
+        }
+
+        nav ul li a:hover {
+
+            color: rgb(32, 32, 234);
+            font-size: 1.4rem;
+            background-color: rgb(198, 147, 245);
+            border-radius: 20px;
+            padding: 3px 22px;
+
+        }
+
+        .left {
+            font-size: 1.8rem;
+            color: blueviolet;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .first {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 120px 0;
+        }
+
+        .first>div {
+            width: 30%;
+
+        }
+
+        .leftsection {
+            font-size: 3rem;
+
+
+        }
+
+        .rightsection img {
+            margin-top: 50px;
+
+            width: 100%;
+
+
+        }
+
+        .purple {
+            color: rgb(123, 16, 223);
+        }
+
+        #element {
+            color: blueviolet;
+        }
+
+        .second {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .second h1 {
+            font-size: 1.9rem;
+        }
+
+        /* about */
+.about .card{
+    width: 280px;
+    height: 360px;
+    border-radius: 15px;
+    padding: 1.5rem;
+    background: rgb(172, 102, 238);
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    transition: 0.4s ease-out;
+    box-shadow: 0px 7px 10px rgba(black,0.5);
+   
+}
+#card1 {
+     /* margin: 42px; */
+     margin-top: 42px;
+     margin-left: 890px;
+     background-image: url('patel2.png');
+     background-size: cover;
+     border: 2px solid rgb(124, 143, 236);
+            box-shadow: 5px 10px 20px 30px rgb(119, 7, 224);
+   
+}
+#card2{
+     /* margin: 2px 470px; */
+     margin-top: 42px;
+     margin-left: 470px;
+    background-image: url('patel1.jpg');
+    background-size: cover;
+     border: 2px solid rgb(124, 143, 236);
+            box-shadow: 5px 10px 20px 30px rgb(119, 7, 224);
+    
+}
+#card3{
+     /* margin: 2px 890px; */
+    margin-top: 42px;
+    margin-left: 42px;
+    background-image: url('clg1.jpg');
+    background-size: cover;
+    border: 2px solid rgb(124, 143, 236);
+            box-shadow: 5px 10px 20px 30px rgb(119, 7, 224);
+}
+
+#card1:hover {
+
+transform: scale(.9);
+color: rgb(3, 3, 168);
+background-color: rgb(180, 116, 240);
+}
+
+#card2:hover {
+
+transform: scale(.9);
+color: rgb(3, 3, 168);
+background-color: rgb(180, 116, 240);
+}
+
+#card3:hover {
+
+transform: scale(.9);
+color: rgb(3, 3, 168);
+background-color: rgb(180, 116, 240);
+}
+
+
+        .about .content h3 {
+            font-size: 2.5rem;
+            color: blueviolet;
+            background-color: rgb(198, 157, 237);
+
+        }
+
+        .about .content h3 span {
+            color: blueviolet;
+        }
+
+        .about .content p {
+            font-size: 1.5rem;
+            color: blueviolet;
+            padding: .5rem 0;
+            margin-left: 40px;
+        }
+
+        .about .skills {
+            padding: 1rem 0;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .about .skills .progress {
+            margin: 1.5rem 0;
+            padding: 1rem;
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+            background: rgb(195, 143, 243);
+            border-radius: 1rem;
+        }
+
+        .about .skills .progress h3 {
+            display: flex;
+            justify-content: space-between;
+            font-size: 2rem;
+            color: rgb(133, 12, 247);
+        }
+
+        .about .skills .progress .bar {
+            position: relative;
+            width: 100%;
+            height: .3rem;
+            margin: 1rem 0;
+            background: white;
+        }
+
+        .about .skills .progress .bar span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgb(70, 2, 134);
+        }
+
+        .about .skills .progress:nth-child(1) .bar span {
+            width: 95%;
+        }
+
+        .about .skills .progress:nth-child(2) .bar span {
+            width: 85%;
+        }
+
+        .about .skills .progress:nth-child(3) .bar span {
+            width: 65%;
+        }
+
+        .about .skills .progress:nth-child(4) .bar span {
+            width: 75%;
+        }
+
+        .about .skills .progress:nth-child(5) .bar span {
+            width: 70%;
+        }
+
+        /* experience */
+
+        #mid {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+
+        }
+
+
+        .box {
+            border: 2px solid rgb(124, 143, 236);
+            box-shadow: 5px 10px 20px 30px rgb(119, 7, 224);
+            padding: 34px;
+            margin: 2px 55px;
+            border-radius: 28px;
+            background-color: blueviolet;
+            margin-bottom: 20px;
+            height: 330px;
+            width: 200px;
+        }
+
+        .box1 {
+            border: 2px solid rgb(124, 143, 236);
+            box-shadow: 5px 10px 20px 30px rgb(119, 7, 224);
+            padding: 34px;
+            margin: 2px 55px;
+            border-radius: 28px;
+            background-color: blueviolet;
+            margin-bottom: 20px;
+            height: 330px;
+            width: 200px;
+            margin-left: 420px;
+            margin-top: 4px;
+        }
+
+        .box2 {
+            border: 2px solid rgb(124, 143, 236);
+            box-shadow: 5px 10px 20px 30px rgb(119, 7, 224);
+            padding: 34px;
+
+            border-radius: 28px;
+            background-color: blueviolet;
+            margin-bottom: 20px;
+            height: 330px;
+            width: 200px;
+            margin-left: 820px;
+            margin-top: 4px;
+        }
+
+        .box .box1 .box2 img {
+            height: 100px;
+            margin: auto;
+            display: block;
+        }
+
+        .center {
+            padding-top: 20px;
+            font-size: 1.2rem;
+        }
+
+        /* .box:hover{
+    color: rgb(3, 3, 168);
+            font-size: 1.04rem;
+       background-color: rgb(180, 116, 240);
+} */
+        .box:hover {
+
+            transform: scale(.9);
+            color: rgb(3, 3, 168);
+            background-color: rgb(180, 116, 240);
+        }
+
+        .box1:hover {
+
+            transform: scale(.9);
+            color: rgb(3, 3, 168);
+            background-color: rgb(180, 116, 240);
+        }
+
+        .box2:hover {
+
+            transform: scale(.9);
+            color: rgb(3, 3, 168);
+            background-color: rgb(180, 116, 240);
+        }
+
+        /* project */
+        #services1 {
+            margin: 34px;
+            display: flex;
+        }
+
+        #services1 .boxx {
+            border: 2px solid rgb(129, 13, 236);
+            padding: 34px;
+            margin: 2px 55px;
+            border-radius: 28px;
+            background: rgb(172, 104, 235);
+            margin-bottom: 30px;
+            box-shadow: 5px 10px 15px 20px inset;
+        }
+
+        #services1 .boxx img {
+            height: 100px;
+            margin: auto;
+            display: block;
+        }
+
+        #services1 .boxx p {
+            font-family: 'Bree Serif', serif;
+
+        }
+
+        .btn {
+            display: flex;
+            width: 40%;
+            justify-content: center;
+            align-items: center;
+            padding: 100px;
+        }
+
+        .btn {
+            padding: 6px 20px;
+            border: 2px solid white;
+            background-color: blueviolet;
+            color: white;
+            margin: 17px;
+            font-size: 1.5rem;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration-line: none;
+        }
+
+
+        .btn:hover {
+            transition: calc(.9);
+            background-color: rgb(61, 61, 233);
+
+
+
+        }
+
+        /* contact */
+        #contact {
+            position: relative;
+        }
+
+        #contact-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 34px;
+        }
+
+        #contact-box input,
+        #contact-box textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 9px;
+            font-size: 1.1rem;
+        }
+
+        #contact-box form {
+            width: 40%;
+        }
+
+        #contact-box label {
+            font-size: 1.3rem;
+            font-family: 'Bree Serif', serif;
+
+        }
+
+
+        footer {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            background-color: black;
+            color: white;
+            padding: auto;
+            padding-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+
+                Vibhu Portfolio
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#first"> Home</a> </li>
+                    <li><a href="#about1">About</a> </li>
+                    <li><a href="#about">Skills</a> </li>
+                    <li><a href="#experience">Experience</a> </li>
+                    <li> <a href="#services-container1">Projects</a> </li>
+                    <li><a href="#contact">Contact </a> </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="first">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">Vibhushit Sharma</span>
+                <div>and I am a passionate</div>
+
+
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="web.png" alt="devimg" height="500" width="480">
+            </div>
+        </section>
+        <hr>
+        <!-- about -->
+
+<Section class="about " id="about1">
+    <h1 id="mid">About</h1>
+    <div class="card" id="card1">
+       
+        <h1>10th standard marks:-  9 Cgpa</h1>
+        <h3>School :- Saraswati Vidhya mandir Shamli</h3>
+
+    </div>
+    <div class="card" id="card2">
+        <h1>12th standard marks:-  8.6 Cgpa</h1>
+        <h3>School :- Saraswati Vidhya mandir Shamli</h3>
+        
+    </div>
+    <div class="card" id="card3">
+        <h1>Bachelor degree of Computer Science Engineering:-  7.5 Cgpa</h1>
+        <h3>College :- Shobhit University Gangoh</h3>
+        
+    </div>
+
+</Section>
+<hr>
+        <section class="about" id="about">
+
+            <h1 id="mid">Skills</h1>
+
+            <div class="content">
+
+                <p>I am representing my Skills in front of you on the basis of percentage %</p>
+
+            </div>
+
+            <div class="skills">
+                <div class="progress">
+                    <h3>HTML <span>95%</span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+                <div class="progress">
+                    <h3>CSS <span>85%</span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+                <div class="progress">
+                    <h3>javascript <span>60%</span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+                <div class="progress">
+                    <h3>Java <span>80%</span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+                <div class="progress">
+                    <h3>SQL <span>70%</span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+                <div class="progress">
+                    <h3>Python <span>70%</span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+            </div>
+
+        </section>
+
+        <hr>
+        <!-- experience -->
+        <section id="experience">
+            <h1 id="mid">Experience</h1>
+            <div class="box">
+                <img src="microsoft.png" alt="">
+                <h2 class="h-secondary center">microsoft</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit
+                    error
+                    Lorem ipsum dolor sit ium a incidunt animi ad, ab omnis sint quae eum.</p>
+            </div>
+
+
+            <div class="box1">
+                <img src="mi-logo.png" alt="">
+                <h2 class="h-secondary center">Mi</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit
+                    error
+                    Lorem ipsum dolor sit ium a incidunt animi ad, ab omnis sint quae eum.</p>
+            </div>
+
+
+            <div class="box2">
+                <img src="logo.png" alt="">
+                <h2 class="h-secondary center">Linkedin</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit
+                    error
+                    Lorem ipsum dolor sit ium a incidunt animi ad, ab omnis sint quae eum.</p>
+            </div>
+        </section>
+        <hr>
+        <!-- project -->
+        <section id="services-container1">
+            <h1 id="mid">Projects</h1>
+            <div id="services1">
+                <div class="boxx">
+                    <img src="logo.jpg" alt="">
+                    <h2 class="h-secondary center">Quiz application</h2>
+                    <p class="center1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa
+                        suscipit error
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et qui, repudiandae similique nam,
+                        recusandae quidem ab asperiores ex, aut fugit labore veritatis facere?
+                        sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem
+                        iste sunt
+                        voluptas beatae facilis labore, omnis sint quae eum.</p>
+                    <button class="btn"><a href="Quizapp.htm">Checkout</a></button>
+                </div>
+
+            </div>
+
+            <div id="services1">
+                <div class="boxx">
+                    <img src="hotal.jpg" alt="">
+                    <h2 class="h-secondary center">5-Star hotal</h2>
+                    <p class="center1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa
+                        suscipit error
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et qui, repudiandae similique nam,
+                        recusandae quidem ab asperiores ex, aut fugit labore veritatis facere?
+                        sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem
+                        iste sunt
+                        voluptas beatae facilis labore, omnis sint quae eum.</p>
+                    <button class="btn"><a href="Hotal.htm">Checkout</a></button>
+                </div>
+
+            </div>
+
+            <div id="services1">
+                <div class="boxx">
+                    <img src="cokeing2.jpg" alt="">
+                    <h2 class="h-secondary center">Restrorent</h2>
+                    <p class="center1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa
+                        suscipit error
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et qui, repudiandae similique nam,
+                        recusandae quidem ab asperiores ex, aut fugit labore veritatis facere?
+                        sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem
+                        iste sunt
+                        voluptas beatae facilis labore, omnis sint quae eum.</p>
+                    <button class="btn"><a href="Food.htm">Checkout</a></button>
+                </div>
+
+            </div>
+        </section>
+        <hr>
+        <!-- contact -->
+        <section id="contact">
+            <h1 id="mid">Contact </h1>
+            <div id="contact-box">
+                <form action="">
+                    <div class="form-group">
+                        <label for="name">Name: </label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email: </label>
+                        <input type="email" name="name" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number: </label>
+                        <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message: </label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="btn">Subbmit</div>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+
+            <div class="center">
+                <marquee direction="right"> Copyright &copy; www.guruportfolio.com. All rights reserved!</marquee>
+
+            </div>
+
+        </footer>
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Web Designer', 'python Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
